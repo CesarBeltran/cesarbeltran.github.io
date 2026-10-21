@@ -1,2 +1,5 @@
 include:
   - sitemap.xml
+  - robots.txt
+exclude:
+  - _backup

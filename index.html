@@ -1,834 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="9J8k7aKQbsX6PkaiaRwL8PEBF6WIWXgUdwEIreXxYmI" />
     <meta name="author" content="Cesar R. Beltrán-Hernández, Cesar Ramiro Beltrán Hernández, Cesar Ramiro Beltran Hernandez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cesar Ramiro Beltrán Hernández. Cybersecurity specialist and researcher. Master's in Digital Security, Pontificia Universidad Javeriana. Research in digital forensics and autonomous vehicle security.">
+    <meta name="description" content="Cesar Ramiro Beltrán Hernández, IT Cloud Engineer Specialist in Bogotá focused on cloud and infrastructure security. MSc in Digital Security (Cum Laude), Pontificia Universidad Javeriana. Professor at Universidad El Bosque. Research in digital forensics and autonomous vehicle security.">
     <meta name="keywords" content="cybersecurity, Digital forensic, magister en seguridad digital, Cesar Ramiro Beltrán Hernández, Cesar Ramiro Beltran Hernandez, Cesar R. Beltrán-Hernández, Cesar Beltrán, autonomous vehicles security, ethical hacking, penetration testing">
     <meta name="Robots" content="index,follow">
-    <meta property="og:title" content="Cesar Ramiro Beltrán Hernández">
-    <meta property="og:description" content="Cybersecurity specialist and researcher. Master's in Digital Security, Pontificia Universidad Javeriana.">
+    <meta property="og:title" content="Cesar Ramiro Beltrán | Cloud & Infrastructure Security · Professor">
+    <meta property="og:description" content="IT Cloud Engineer Specialist | Cloud & Infrastructure Security | MSc in Digital Security | Professor, Universidad El Bosque.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cesarbeltran.github.io/">
     <link rel="canonical" href="https://cesarbeltran.github.io/">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Cesar Ramiro Beltrán Hernández</title>
-
-    <!-- JSON-LD structured data -->
+    <title>Cesar Ramiro Beltrán | Cloud & Infrastructure Security · Professor</title>
     <script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
-	  "@type": "Person",
-	  "name": "Cesar Ramiro Beltrán Hernández",
-	  "alternateName": ["Cesar R. Beltrán-Hernández", "Cesar Beltran Hernandez"],
-	  "url": "https://cesarbeltran.github.io/",
-	  "email": "cesarr_beltran@javeriana.edu.co",
-	  "jobTitle": ["IT Cloud Engineer Specialist", "Assistant Professor", "Cybersecurity Researcher"],
-	  "worksFor": [
+	  "@graph": [
 		{
-		  "@type": "Organization",
-		  "name": "Inchcape Digital"
+		  "@type": "Person",
+		  "@id": "https://cesarbeltran.github.io/#person",
+		  "name": "Cesar Ramiro Beltrán Hernández",
+		  "alternateName": ["Cesar R. Beltrán-Hernández", "Cesar Beltran Hernandez", "Cesar Beltrán"],
+		  "url": "https://cesarbeltran.github.io/",
+		  "image": "https://cesarbeltran.github.io/foto.jpg",
+		  "email": "cesarr_beltran@javeriana.edu.co",
+		  "description": "IT Cloud Engineer Specialist focused on cloud and infrastructure security, Bogotá, Colombia. Master's in Digital Security (Cum Laude), Pontificia Universidad Javeriana. Research in digital forensics and autonomous vehicle security. Professor at Universidad El Bosque.",
+		  "jobTitle": ["IT Cloud Engineer Specialist", "Professor", "Cybersecurity Researcher"],
+		  "homeLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" } },
+		  "worksFor": [
+			{ "@type": "Organization", "name": "Inchcape Digital" },
+			{ "@type": "CollegeOrUniversity", "name": "Universidad El Bosque" }
+		  ],
+		  "affiliation": [
+			{ "@type": "CollegeOrUniversity", "name": "Universidad El Bosque" },
+			{ "@type": "ResearchOrganization", "name": "WhiteLab Research Group", "url": "https://perfilesycapacidades.javeriana.edu.co/es/organisations/whitelab" }
+		  ],
+		  "alumniOf": [
+			{ "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Javeriana" },
+			{ "@type": "CollegeOrUniversity", "name": "Universidad El Bosque" },
+			{ "@type": "CollegeOrUniversity", "name": "Universidad Cooperativa de Colombia" }
+		  ],
+		  "knowsAbout": [
+			"Cybersecurity", "Information Security", "Digital Forensics", "Cloud Forensics",
+			"Incident Response", "Ethical Hacking", "Penetration Testing", "Vulnerability Assessment",
+			"Autonomous Vehicle Security", "Cloud Security", "Cloud Infrastructure", "Microsoft Azure",
+			"Windows Server", "Linux", "Microsoft 365", "Active Directory", "VMware", "Hyper-V",
+			"Oracle VM", "Backup and Recovery", "Identity and Access Management", "Vulnerability Management", "ISO/IEC 27001", "Risk Management", "MAGERIT"
+		  ],
+		  "sameAs": [
+			"https://www.linkedin.com/in/cesarbeltranh/",
+			"https://github.com/CesarBeltran"
+		  ],
+		  "hasCredential": [
+			{
+			  "@type": "EducationalOccupationalCredential",
+			  "name": "Master's in Digital Security (Cum Laude)",
+			  "credentialCategory": "degree",
+			  "educationalLevel": "Master's degree",
+			  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Javeriana" }
+			},
+			{
+			  "@type": "EducationalOccupationalCredential",
+			  "name": "Specialization in Telematics Network Security",
+			  "credentialCategory": "degree",
+			  "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad El Bosque" }
+			}
+		  ]
 		},
 		{
-		  "@type": "CollegeOrUniversity",
-		  "name": "Universidad El Bosque"
-		}
-	  ],
-	  "affiliation": [
-		{
-		  "@type": "CollegeOrUniversity",
-		  "name": "Universidad El Bosque"
-		},
-		{
-		  "@type": "ResearchOrganization",
-		  "name": "WhiteLab Research Group",
-		  "url": "https://perfilesycapacidades.javeriana.edu.co/es/organisations/whitelab"
-		}
-	  ],
-	  "alumniOf": [
-		{ "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Javeriana" },
-		{ "@type": "CollegeOrUniversity", "name": "Universidad El Bosque" },
-		{ "@type": "CollegeOrUniversity", "name": "Universidad Cooperativa de Colombia" }
-	  ],
-	  "knowsAbout": [
-		"Cybersecurity", "Digital Forensics", "Ethical Hacking",
-		"Penetration Testing", "Autonomous Vehicle Security",
-		"Incident Response", "Microsoft Azure", "VMware", "Hyper-V", "Risk Management"
-	  ],
-	  "sameAs": [
-		"https://www.linkedin.com/in/cesarbeltranh/"
-	  ],
-	  "hasCredential": [
-		{
-		  "@type": "EducationalOccupationalCredential",
-		  "name": "Master's in Digital Security",
-		  "educationalLevel": "Master's degree",
-		  "recognizedBy": {
-			"@type": "CollegeOrUniversity",
-			"name": "Pontificia Universidad Javeriana"
-		  }
-		}
-	  ],
-	  "author": [
-		{
-		  "@type": "ScholarlyArticle",
+		  "@type": "Chapter",
 		  "name": "Safeguarding Connected Autonomous Vehicles: A Cybersecurity Perspective",
 		  "datePublished": "2024",
-		  "url": "https://doi.org/10.1007/978-3-031-75233-9_24"
+		  "publisher": { "@type": "Organization", "name": "Springer" },
+		  "url": "https://doi.org/10.1007/978-3-031-75233-9_24",
+		  "author": { "@id": "https://cesarbeltran.github.io/#person" }
 		},
 		{
-		  "@type": "ScholarlyArticle",
+		  "@type": "Thesis",
 		  "name": "Design and Implementation of a Pilot Forensic Laboratory Specialized in Cybersecurity Incident Response for a Public Entity in the District of Bogotá",
+		  "inSupportOf": "Master's in Digital Security",
 		  "datePublished": "2024",
-		  "url": "http://hdl.handle.net/10554/69768"
+		  "publisher": { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Javeriana" },
+		  "url": "https://hdl.handle.net/10554/69768",
+		  "author": { "@id": "https://cesarbeltran.github.io/#person" }
 		},
 		{
-		  "@type": "ScholarlyArticle",
+		  "@type": "Thesis",
 		  "name": "Information Security Risk Assessment at TrueSecure S.A. Using the MAGERIT Methodology and Risk Treatment Plan",
+		  "inSupportOf": "Specialization in Telematics Network Security",
 		  "datePublished": "2023",
-		  "url": "https://hdl.handle.net/20.500.12495/11208"
+		  "publisher": { "@type": "CollegeOrUniversity", "name": "Universidad El Bosque" },
+		  "url": "https://hdl.handle.net/20.500.12495/11208",
+		  "author": { "@id": "https://cesarbeltran.github.io/#person" }
+		},
+		{
+		  "@type": "SoftwareSourceCode",
+		  "name": "FaultShop",
+		  "description": "Deliberately vulnerable online store for practicing ethical web hacking against current threats, based on the OWASP Top 10:2025 and OWASP API Security Top 10:2023.",
+		  "codeRepository": "https://github.com/CesarBeltran/faultshop",
+		  "url": "https://github.com/CesarBeltran/faultshop",
+		  "programmingLanguage": "Python",
+		  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+		  "keywords": "ethical hacking, web security, OWASP Top 10, vulnerable application, cybersecurity training",
+		  "author": { "@id": "https://cesarbeltran.github.io/#person" }
 		}
 	  ]
 	}
     </script>
-
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta name="theme-color" content="#4f46e5">
+    <meta property="og:image" content="https://cesarbeltran.github.io/foto.jpg">
+    <meta property="og:image:alt" content="Cesar Ramiro Beltrán Hernández">
+    <meta property="og:site_name" content="Cesar Beltrán">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_CO">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cesar Ramiro Beltrán | Cloud & Infrastructure Security · Professor">
+    <meta name="twitter:description" content="IT Cloud Engineer Specialist | Cloud & Infrastructure Security | MSc in Digital Security | Professor, Universidad El Bosque.">
+    <link rel="alternate" hreflang="en" href="https://cesarbeltran.github.io/">
+    <link rel="alternate" hreflang="es" href="https://cesarbeltran.github.io/index_es.html">
+    <link rel="alternate" hreflang="x-default" href="https://cesarbeltran.github.io/">
+    <script>(function(){try{var t=localStorage.getItem("theme");}catch(e){}if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);})();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        :root {
-            --ink:          #161b22;
-            --ink-mid:      #374151;
-            --ink-soft:     #6b7280;
-            --accent:       #1a5fa8;
-            --accent-dim:   #164e8c;
-            --accent-bg:    #eaf1fb;
-            --accent-glow:  rgba(26, 95, 168, 0.14);
-            --border:       #e2e8f0;
-            --border-soft:  #f1f5f9;
-            --bg:           #f8fafc;
-            --white:        #ffffff;
-            --card-shadow:  0 1px 3px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
-            --radius:       8px;
-            --radius-sm:    5px;
-        }
-
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'IBM Plex Serif', Georgia, serif;
-            background: var(--bg);
-            color: var(--ink);
-            line-height: 1.75;
-            font-size: 16px;
-        }
-
-        /* HEADER */
-        header {
-            background: var(--ink);
-            background-image:
-                linear-gradient(rgba(26,95,168,0.07) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(26,95,168,0.07) 1px, transparent 1px);
-            background-size: 32px 32px;
-            color: #fff;
-            padding: 2.75rem 0 0;
-            position: relative;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            left: 0; top: 0; bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, var(--accent), transparent);
-        }
-
-        .header-inner {
-            max-width: 880px;
-            margin: 0 auto;
-            padding: 0 2rem 2rem;
-            position: relative;
-        }
-
-        .language-switch {
-            position: absolute;
-            top: 0; right: 2rem;
-        }
-        .language-switch a {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.45);
-            border: 1px solid rgba(255,255,255,0.15);
-            padding: 4px 12px;
-            text-decoration: none;
-            border-radius: var(--radius-sm);
-            transition: color 0.2s, border-color 0.2s;
-        }
-        .language-switch a:hover { color: #fff; border-color: rgba(255,255,255,0.45); }
-
-        .header-name {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: clamp(1.5rem, 3.5vw, 2.15rem);
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            margin-bottom: 0.3rem;
-            margin-top: 0.5rem;
-        }
-
-        .header-sub {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.78rem;
-            color: #5fa3e0;
-            letter-spacing: 0.03em;
-        }
-
-        /* NAV */
-        nav {
-            background: rgba(0,0,0,0.35);
-            backdrop-filter: blur(4px);
-            border-top: 1px solid rgba(255,255,255,0.06);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            max-width: 880px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        nav ul li a {
-            display: block;
-            padding: 0.7rem 0.85rem;
-            color: rgba(255,255,255,0.45);
-            text-decoration: none;
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.78rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        nav ul li a:hover { color: rgba(255,255,255,0.9); }
-
-        /* MAIN */
-        main {
-            max-width: 880px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        section {
-            padding: 2.5rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-        section:last-child { border-bottom: none; }
-
-        h2 {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.72rem;
-            font-weight: 500;
-            color: var(--accent);
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        h2::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border);
-        }
-
-        /* ABOUT */
-        .about-grid {
-            display: grid;
-            grid-template-columns: 130px 1fr;
-            gap: 2rem;
-            align-items: start;
-        }
-
-        .about-grid img {
-            width: 130px;
-            border-radius: var(--radius);
-            display: block;
-            border: 2px solid var(--border);
-            box-shadow: var(--card-shadow);
-        }
-
-        .about-text p {
-            color: var(--ink-mid);
-            margin-bottom: 0.9rem;
-        }
-        .about-text p:last-of-type { margin-bottom: 0; }
-
-        .skills-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 1.1rem;
-        }
-
-        .skill-tag {
-            background: var(--accent-bg);
-            color: var(--accent-dim);
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            padding: 3px 10px;
-            border-radius: var(--radius-sm);
-            border: 1px solid rgba(26,95,168,0.2);
-            letter-spacing: 0.01em;
-        }
-
-        /* RESEARCH */
-        .research-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.65rem;
-        }
-
-        .research-list li {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.92rem;
-            color: var(--ink-mid);
-            padding: 0.7rem 1rem;
-            border-left: 2px solid var(--accent);
-            background: var(--white);
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-            box-shadow: var(--card-shadow);
-        }
-
-        /* VENTURE */
-        .venture-box {
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 1.25rem 1.5rem;
-            background: var(--white);
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 1.5rem;
-            box-shadow: var(--card-shadow);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .venture-box::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent), transparent);
-        }
-
-        .venture-name {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--ink);
-            margin-bottom: 0.15rem;
-        }
-
-        .venture-role {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--ink-soft);
-            margin-bottom: 0.65rem;
-            letter-spacing: 0.03em;
-        }
-
-        .venture-desc {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.88rem;
-            color: var(--ink-mid);
-            line-height: 1.65;
-        }
-
-        .venture-link {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--accent);
-            text-decoration: none;
-            border: 1px solid rgba(26,95,168,0.35);
-            padding: 6px 14px;
-            border-radius: var(--radius-sm);
-            white-space: nowrap;
-            background: var(--accent-bg);
-            transition: all 0.2s;
-        }
-        .venture-link:hover {
-            background: var(--accent);
-            color: #fff;
-            border-color: var(--accent);
-        }
-
-        /* PUBLICATIONS */
-        .pub-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-            background: var(--white);
-            box-shadow: var(--card-shadow);
-        }
-
-        .pub-item {
-            display: flex;
-            gap: 1rem;
-            align-items: baseline;
-            padding: 0.85rem 1.25rem;
-            border-bottom: 1px solid var(--border-soft);
-            transition: background 0.15s;
-        }
-        .pub-item:last-child { border-bottom: none; }
-        .pub-item:hover { background: var(--border-soft); }
-
-        .pub-year {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--accent);
-            white-space: nowrap;
-            min-width: 36px;
-        }
-
-        .pub-item a {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.88rem;
-            color: var(--ink-mid);
-            text-decoration: none;
-            border-bottom: 1px solid var(--border);
-            transition: color 0.2s, border-color 0.2s;
-        }
-        .pub-item a:hover { color: var(--accent); border-color: var(--accent); }
-
-        /* TEACHING */
-        .block {
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 1.25rem 1.5rem;
-            box-shadow: var(--card-shadow);
-            margin-bottom: 1rem;
-        }
-        .block:last-child { margin-bottom: 0; }
-
-        .block-title {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.92rem;
-            font-weight: 600;
-            color: var(--ink);
-            margin-bottom: 0.15rem;
-        }
-
-        .block-meta {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--ink-soft);
-            margin-bottom: 0.9rem;
-            letter-spacing: 0.02em;
-        }
-
-        /* recurring course tag */
-        .recurring-note {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.84rem;
-            color: var(--ink-mid);
-            margin-bottom: 0.9rem;
-            padding: 0.55rem 0.9rem;
-            background: var(--border-soft);
-            border-radius: var(--radius-sm);
-            border-left: 2px solid var(--border);
-        }
-
-        .recurring-note span {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--ink-soft);
-            margin-left: 0.4rem;
-        }
-
-        .course-rows { display: flex; flex-direction: column; gap: 0.45rem; }
-
-        .course-row { display: flex; gap: 0.75rem; align-items: baseline; }
-
-        .course-year {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--ink-soft);
-            min-width: 32px;
-        }
-
-        .course-names {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.86rem;
-            color: var(--ink-mid);
-            line-height: 1.6;
-        }
-
-        .block-desc {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.88rem;
-            color: var(--ink-mid);
-            line-height: 1.65;
-        }
-
-        /* EXPERIENCE */
-        .timeline {
-            border-left: 2px solid var(--border);
-            padding-left: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .t-item { position: relative; }
-
-        .t-item::before {
-            content: '';
-            position: absolute;
-            left: -1.65rem; top: 6px;
-            width: 9px; height: 9px;
-            border-radius: 50%;
-            background: var(--white);
-            border: 2px solid var(--accent);
-            box-shadow: 0 0 0 3px var(--accent-glow);
-        }
-
-        .t-title {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.92rem;
-            font-weight: 600;
-            color: var(--ink);
-            margin-bottom: 0.1rem;
-        }
-
-        .t-meta {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--ink-soft);
-            margin-bottom: 0.35rem;
-            letter-spacing: 0.02em;
-        }
-
-        .t-desc {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.87rem;
-            color: var(--ink-mid);
-            line-height: 1.65;
-        }
-
-        /* EDUCATION */
-        .edu-list { display: flex; flex-direction: column; gap: 1.1rem; }
-
-        .edu-item {
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 1.1rem 1.4rem;
-            box-shadow: var(--card-shadow);
-            border-left: 3px solid var(--border);
-        }
-        .edu-item:first-child { border-left-color: var(--accent); }
-
-        .edu-title {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.92rem;
-            font-weight: 600;
-            color: var(--ink);
-            margin-bottom: 0.1rem;
-        }
-
-        .edu-period {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--ink-soft);
-            margin-bottom: 0.4rem;
-            letter-spacing: 0.02em;
-        }
-
-        .edu-detail {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.85rem;
-            color: var(--ink-mid);
-            margin-bottom: 0.25rem;
-            line-height: 1.5;
-        }
-        .edu-detail a { color: var(--accent); text-decoration: none; }
-        .edu-detail a:hover { text-decoration: underline; }
-
-        .honor-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.5rem; }
-
-        .honor-tag {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.68rem;
-            color: var(--accent-dim);
-            background: var(--accent-bg);
-            padding: 2px 10px;
-            border-radius: var(--radius-sm);
-            border: 1px solid rgba(26,95,168,0.2);
-            text-decoration: none;
-            letter-spacing: 0.02em;
-            transition: background 0.2s;
-        }
-        .honor-tag:hover { background: #d0e3f7; }
-
-        .achievements {
-            list-style: none;
-            margin-top: 0.6rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.2rem;
-        }
-        .achievements li {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.83rem;
-            color: var(--ink-soft);
-            padding-left: 1rem;
-            position: relative;
-        }
-        .achievements li::before {
-            content: '-';
-            position: absolute; left: 0;
-            color: var(--border);
-        }
-
-        /* CONTACT */
-        #contact p {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 0.92rem;
-            color: var(--ink-mid);
-        }
-        #contact a { color: var(--accent); text-decoration: none; }
-        #contact a:hover { text-decoration: underline; }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--ink);
-            color: rgba(255,255,255,0.3);
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.72rem;
-            margin-top: 2rem;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 600px) {
-            .about-grid { grid-template-columns: 1fr; }
-            .about-grid img { width: 100px; }
-            .venture-box { flex-direction: column; }
-            nav ul li a { padding: 0.6rem 0.5rem; font-size: 0.72rem; }
-            .language-switch {
-                position: relative;
-                top: auto; right: auto;
-                text-align: right;
-                margin-bottom: 0.75rem;
-            }
-        }
-    </style>
-	<link rel="sitemap" type="application/xml" href="/sitemap.xml">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <div class="header-inner">
-        <div class="language-switch"><a href="/index_es.html">Español</a></div>
-        <div class="header-name">Cesar Ramiro Beltrán Hernández</div>
-        <div class="header-sub">cybersecurity · digital forensics · academic</div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<header class="nav"><div class="nav-inner">
+  <a href="#top" class="logo">Cesar <span class="logo-mid">Ramiro </span>Beltrán<span class="logo-dot">.</span></a>
+  <ul class="nav-links" id="nav-links"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul>
+  <div class="nav-actions">
+    <a class="lang-btn" href="index_es.html" hreflang="es" title="Ver en español">ES</a>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</div></header>
+<main id="top">
+<section class="hero"><div class="container hero-grid">
+  <div class="hero-text">
+    <h1 class="hero-name">Cesar Ramiro Beltrán</h1>
+    <p class="hero-role">IT Cloud Engineer Specialist · Cloud &amp; Infrastructure Security</p>
+    <p class="hero-desc">Engineer specialized in on-premise and cloud enterprise infrastructure security, with research in digital forensics, incident response and autonomous vehicle security. Professor of information security, ethical hacking and operating systems at Universidad El Bosque.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#publications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg>View publications</a>
+      <a class="btn btn-outline" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Get in touch</a>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#venture">Venture</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-    <section id="about">
-        <h2>About</h2>
-        <div class="about-grid">
-            <img src="foto.jpg" alt="Cesar Ramiro Beltrán Hernández">
-            <div class="about-text">
-                <p>Electronic Engineer with a postgraduate specialization in telematics network security (Universidad El Bosque) and a Master's in Digital Security (Pontificia Universidad Javeriana). Research interests include autonomous vehicle security and digital forensics applied to critical systems.</p>
-                <p>Several years of experience in enterprise IT infrastructure, covering Windows Server, Linux, virtualization platforms, and Microsoft Azure. Additional background in penetration testing, ethical hacking, and technology risk management.</p>
-                <p>Currently teaching at Universidad El Bosque and working as IT Cloud Engineer Specialist at Inchcape Digital.</p>
-                <div class="skills-row">
-                    <span class="skill-tag">Penetration Testing</span>
-                    <span class="skill-tag">Digital Forensics</span>
-                    <span class="skill-tag">Ethical Hacking</span>
-                    <span class="skill-tag">Autonomous Vehicle Security</span>
-                    <span class="skill-tag">Microsoft Azure</span>
-                    <span class="skill-tag">VMware / Hyper-V</span>
-                    <span class="skill-tag">MAGERIT / Risk Management</span>
-                    <span class="skill-tag">Incident Response</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="research">
-        <h2>Research</h2>
-        <ul class="research-list">
-            <li>Cybersecurity and Autonomous Vehicles</li>
-            <li>Digital Forensics Applied to Critical Systems (On-Premise and Cloud)</li>
-            <li>Vulnerability Analysis in Enterprise Systems</li>
-        </ul>
-    </section>
-
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul class="pub-list">
-            <li class="pub-item">
-                <span class="pub-year">2024</span>
-                <a href="https://doi.org/10.1007/978-3-031-75233-9_24" target="_blank" rel="noopener noreferrer">Safeguarding Connected Autonomous Vehicles: A Cybersecurity Perspective</a>
-            </li>
-            <li class="pub-item">
-                <span class="pub-year">2024</span>
-                <a href="http://hdl.handle.net/10554/69768" target="_blank" rel="noopener noreferrer">Design and Implementation of a Pilot Forensic Laboratory Specialized in Cybersecurity Incident Response for a Public Entity in the District of Bogotá</a>
-            </li>
-            <li class="pub-item">
-                <span class="pub-year">2023</span>
-                <a href="https://hdl.handle.net/20.500.12495/11208" target="_blank" rel="noopener noreferrer">Information Security Risk Assessment at TrueSecure S.A. Using the MAGERIT Methodology and Risk Treatment Plan</a>
-            </li>
-        </ul>
-    </section>
-
-    <section id="teaching">
-        <h2>Academic Experience</h2>
-
-        <div class="block">
-            <div class="block-title">Assistant Professor, Faculty of Engineering, Universidad El Bosque</div>
-            <div class="block-meta">2023 – present · Bogotá</div>
-
-            <div class="recurring-note">
-                Diploma Course: Information Security and Ethical Hacking
-                <span>every year since 2023</span>
-            </div>
-
-            <div class="course-rows">
-                <div class="course-row">
-                    <span class="course-year">2026</span>
-                    <span class="course-names">Information Security · Operational Systems</span>
-                </div>
-                <div class="course-row">
-                    <span class="course-year">2025</span>
-                    <span class="course-names">Information Security</span>
-                </div>
-                <div class="course-row">
-                    <span class="course-year">2023</span>
-                    <span class="course-names">Digital Systems and Computer Architecture</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="block">
-            <div class="block-title">Research Group Coordinator, WhiteLab, Pontificia Universidad Javeriana</div>
-            <div class="block-meta">2023 – 2024 · Bogotá</div>
-            <p class="block-desc">Coordinated research activities in cybersecurity and digital forensics. Supervised undergraduate theses and contributed to academic publications.</p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="timeline">
-            <div class="t-item">
-                <div class="t-title">IT Cloud Engineer Specialist, Inchcape Digital</div>
-                <div class="t-meta">apr. 2026 – present · Bogotá</div>
-                <p class="t-desc">Cloud infrastructure administration and engineering.</p>
-            </div>
-            <div class="t-item">
-                <div class="t-title">IT System Engineer Specialist, Inchcape Digital</div>
-                <div class="t-meta">sept. 2023 – apr. 2026 · Bogotá</div>
-                <p class="t-desc">IT infrastructure administration.</p>
-            </div>
-            <div class="t-item">
-                <div class="t-title">Operating Systems Specialist, Cirion Technologies</div>
-                <div class="t-meta">feb. 2022 – sept. 2023 · Bogotá</div>
-                <p class="t-desc">Administration of Windows Server and Linux systems. Active Directory, SMTP, WSUS, RDS, and virtualization on VMware and Hyper-V.</p>
-            </div>
-            <div class="t-item">
-                <div class="t-title">IT Operations Engineer, Cirion Technologies</div>
-                <div class="t-meta">mar. 2020 – feb. 2022 · Bogotá</div>
-                <p class="t-desc">Support and administration of Linux and Windows Server systems (Level 1-2). DNS zone management and hardware support for HP ProLiant, Lenovo ThinkSystem, and Dell PowerEdge servers.</p>
-            </div>
-            <div class="t-item">
-                <div class="t-title">Datacenter Operator Engineer (Cirion Technologies), ACT Telemática</div>
-                <div class="t-meta">oct. 2018 – feb. 2020 · Bogotá</div>
-                <p class="t-desc">Operations for Veritas NetBackup and HP Data Protector. Backup and restore for Windows, Linux, VMware, Hyper-V, and databases: Oracle, MS Exchange, MS SQL, MySQL, SAP.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="edu-list">
-            <div class="edu-item">
-                <div class="edu-title">Master's in Digital Security, Pontificia Universidad Javeriana</div>
-                <div class="edu-period">2023 – 2025</div>
-                <p class="edu-detail">Teaching and research scholarship, <a href="https://perfilesycapacidades.javeriana.edu.co/es/organisations/whitelab" target="_blank" rel="noopener noreferrer">WhiteLab Research Group</a></p>
-                <div class="honor-tags">
-                    <a class="honor-tag" href="/cumlaude.jpg" target="_blank" rel="noopener noreferrer">Cum Laude</a>
-                    <a class="honor-tag" href="/hmentionPUJ.jpg" target="_blank" rel="noopener noreferrer">Thesis Honorable Mention</a>
-                </div>
-            </div>
-            <div class="edu-item">
-                <div class="edu-title">Postgraduate Specialization in Telematics Network Security, Universidad El Bosque</div>
-                <div class="edu-period">jul. 2022 – jun. 2023</div>
-                <div class="honor-tags">
-                    <a class="honor-tag" href="/hmentionEB.jpg" target="_blank" rel="noopener noreferrer">Thesis Meritorious Mention</a>
-                </div>
-            </div>
-            <div class="edu-item">
-                <div class="edu-title">Bachelor's in Electronic Engineering, Universidad Cooperativa de Colombia</div>
-                <div class="edu-period">2010 – 2015</div>
-                <p class="edu-detail">Thesis: Development of an instrument for patterning thermal sensors using linear regression</p>
-                <p class="edu-detail" style="margin-top:0.6rem; font-weight:600; color:var(--ink);">Notable achievements</p>
-                <ul class="achievements">
-                    <li>2nd Place, UNROBOT, National University of Colombia, Bogotá (2017)</li>
-                    <li>2nd and 3rd Place, Robomatrix Latin American Robotics League (2017)</li>
-                    <li>1st Place, Sumo Robot, EXPO UdeC, University of Cundinamarca, Chía (2015)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:cesarr_beltran@javeriana.edu.co">cesarr_beltran@javeriana.edu.co</a> or connect on <a href="https://www.linkedin.com/in/cesarbeltranh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-    </section>
-
+    <div class="hero-social">
+      <a href="https://www.linkedin.com/in/cesarbeltranh/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      <a href="https://github.com/CesarBeltran" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
+      <a href="mailto:cesarr_beltran@javeriana.edu.co" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a>
+    </div>
+  </div>
+  <div class="hero-photo"><div class="photo-ring">
+    <img src="foto.jpg" alt="Cesar Ramiro Beltrán Hernández" width="278" height="343" fetchpriority="high">
+  </div></div>
+</div></section>
+<section id="about" class="block alt"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">01.</p><h2 class="section-title">About me</h2></div>
+<div class="about-grid">
+  <div class="about-text reveal"><p class="whoami"><span>$ whoami</span>cesar.beltran · cloud · forensics · research · teaching</p><p>I am an Electronic Engineer from Universidad Cooperativa de Colombia, hold a Specialization in Telematics Network Security from Universidad El Bosque, and earned a Master's in Digital Security from Pontificia Universidad Javeriana, where I graduated Cum Laude.</p><p>I have extensive experience in enterprise IT infrastructure, including Windows Server and Linux administration, virtualization with VMware, Hyper-V and Oracle VM, and cloud services on Microsoft Azure and Microsoft 365. I complement this experience with knowledge of penetration testing, ethical hacking, digital forensics, technology risk management and the ISO/IEC 27001 standard.</p><p>I currently work as an IT Cloud Engineer Specialist at Inchcape Digital, where I focus on cloud security: security controls, vulnerability management, and identity and access management. I am also a professor in the Faculty of Engineering at Universidad El Bosque, where I teach information security and ethical hacking.</p></div>
+</div></div></section>
+<section id="skills" class="block"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">02.</p><h2 class="section-title">Skills</h2></div>
+<div class="skills-grid">
+  <div class="card skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Offensive Security</h3><div class="tags"><span class="tag">Penetration Testing</span><span class="tag">Ethical Hacking</span><span class="tag">Vulnerability Analysis</span></div></div>
+  <div class="card skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></div><h3>Forensics & Response</h3><div class="tags"><span class="tag">Digital Forensics</span><span class="tag">Incident Response</span><span class="tag">Forensic Labs</span></div></div>
+  <div class="card skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H8a6 6 0 1 1 5.7-7.9A4.5 4.5 0 1 1 17.5 19z"/></svg></div><h3>Cloud</h3><div class="tags"><span class="tag">Microsoft Azure</span><span class="tag">Cloud Security</span><span class="tag">Identity &amp; Access</span><span class="tag">Cloud Infrastructure</span><span class="tag">Cloud Forensics</span></div></div>
+  <div class="card skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg></div><h3>Infrastructure</h3><div class="tags"><span class="tag">Windows Server</span><span class="tag">Linux</span><span class="tag">Microsoft 365</span><span class="tag">Active Directory</span><span class="tag">DNS</span><span class="tag">WSUS</span><span class="tag">RDS</span></div></div>
+  <div class="card skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div><h3>Virtualization & Backup</h3><div class="tags"><span class="tag">VMware</span><span class="tag">Hyper-V</span><span class="tag">Oracle VM</span><span class="tag">Veritas NetBackup</span><span class="tag">HP Data Protector</span></div></div>
+  <div class="card skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></div><h3>Risk & Governance</h3><div class="tags"><span class="tag">ISO/IEC 27001</span><span class="tag">MAGERIT</span><span class="tag">Risk Management</span><span class="tag">Risk Treatment Plans</span></div></div>
+</div></div></section>
+<section id="research" class="block alt"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">03.</p><h2 class="section-title">Research</h2></div>
+<div class="research-grid">
+  <div class="card research-card reveal"><span class="research-num">01</span><h3>Cybersecurity and Autonomous Vehicles</h3><p>Threats, attack surfaces and defenses for connected autonomous vehicles.</p></div>
+  <div class="card research-card reveal"><span class="research-num">02</span><h3>Digital Forensics Applied to Critical Systems</h3><p>Forensic methods for on-premise and cloud environments, and incident response labs.</p></div>
+  <div class="card research-card reveal"><span class="research-num">03</span><h3>Vulnerability Analysis in Enterprise Systems</h3><p>Assessment of enterprise systems and technology risk using structured methodologies.</p></div>
+</div></div></section>
+<section id="publications" class="block"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">04.</p><h2 class="section-title">Publications</h2></div>
+<div class="pub-list">
+  <a class="card pub reveal" href="https://doi.org/10.1007/978-3-031-75233-9_24" target="_blank" rel="noopener" aria-label="Open publication: Safeguarding Connected Autonomous Vehicles: A Cybersecurity Perspective"><span class="pub-year">2024</span><div><div class="pub-title">Safeguarding Connected Autonomous Vehicles: A Cybersecurity Perspective</div><div class="pub-meta">Book chapter · Springer</div></div><span class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+  <a class="card pub reveal" href="https://hdl.handle.net/10554/69768" target="_blank" rel="noopener" aria-label="Open publication: Design and Implementation of a Pilot Forensic Laboratory Specialized in Cybersecurity Incident Response for a Public Entity in the District of Bogotá"><span class="pub-year">2024</span><div><div class="pub-title">Design and Implementation of a Pilot Forensic Laboratory Specialized in Cybersecurity Incident Response for a Public Entity in the District of Bogotá</div><div class="pub-meta">Master's thesis (co-authored) · Pontificia Universidad Javeriana</div></div><span class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+  <a class="card pub reveal" href="https://hdl.handle.net/20.500.12495/11208" target="_blank" rel="noopener" aria-label="Open publication: Information Security Risk Assessment at TrueSecure S.A. Using the MAGERIT Methodology and Risk Treatment Plan"><span class="pub-year">2023</span><div><div class="pub-title">Information Security Risk Assessment at TrueSecure S.A. Using the MAGERIT Methodology and Risk Treatment Plan</div><div class="pub-meta">Specialization thesis · Universidad El Bosque</div></div><span class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+</div></div></section>
+<section id="projects" class="block alt"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">05.</p><h2 class="section-title">Projects</h2></div>
+<div class="card project reveal">
+  <a class="project-thumb" href="https://github.com/CesarBeltran/faultshop" target="_blank" rel="noopener"><img src="faultshop.jpg" alt="Screenshot of the FaultShop home page" width="720" height="435" loading="lazy" decoding="async"></a>
+  <div class="project-body">
+  <div class="project-head"><h3>FaultShop</h3><span class="project-meta">Personal project · Open source</span></div>
+  <p>A deliberately vulnerable online store for practicing ethical web hacking. Unlike classic labs, it covers current threats based on the OWASP Top 10:2025 and OWASP API Security Top 10:2023, with 18 documented vulnerabilities ranging from SQLi and XSS to SSRF, IDOR and unauthenticated API endpoints. Designed as a hands-on resource for information security and ethical hacking courses.</p>
+  <div class="project-foot">
+    <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Docker</span></div>
+    <div class="project-links"><a href="https://github.com/CesarBeltran/faultshop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>View on GitHub</a><a href="https://hub.docker.com/r/cbeltranh/faultshop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg>Docker Hub</a></div>
+  </div>
+  </div>
+</div>
+</div></section>
+<section id="experience" class="block"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">06.</p><h2 class="section-title">Experience</h2></div>
+<div class="tabs reveal" role="tablist">
+  <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-ind" type="button">Industry</button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="panel-acad" type="button">Academia</button>
+</div>
+<div id="panel-ind" class="tab-panel active" role="tabpanel"><div class="timeline">
+  <div class="tl-item reveal current"><div class="card tl-card"><div class="tl-top"><div class="tl-role">IT Cloud Engineer Specialist</div><div class="tl-date">Apr 2026 – Present</div></div><div class="tl-org">Inchcape Digital · Bogotá</div><p class="tl-desc">Cloud security on Microsoft Azure: implementation and monitoring of security controls, vulnerability management, and identity and access management.</p><div class="tags"><span class="tag">Microsoft Azure</span><span class="tag">Cloud Security</span><span class="tag">Vulnerability Management</span><span class="tag">IAM</span></div></div></div>
+  <div class="tl-item reveal"><div class="card tl-card"><div class="tl-top"><div class="tl-role">IT System Engineer Specialist</div><div class="tl-date">Sep 2023 – Apr 2026</div></div><div class="tl-org">Inchcape Digital · Bogotá</div><p class="tl-desc">On-premise and cloud IT infrastructure administration: Microsoft Azure services, Windows Server and Linux servers, and Microsoft 365 administration.</p><div class="tags"><span class="tag">Microsoft Azure</span><span class="tag">Microsoft 365</span><span class="tag">Windows Server</span><span class="tag">Linux</span></div></div></div>
+  <div class="tl-item reveal"><div class="card tl-card"><div class="tl-top"><div class="tl-role">Operating Systems Specialist</div><div class="tl-date">Feb 2022 – Sep 2023</div></div><div class="tl-org">Cirion Technologies · Bogotá</div><p class="tl-desc">Administration of Windows Server and Linux systems. Active Directory, SMTP, WSUS, RDS, and virtualization on VMware and Hyper-V.</p><div class="tags"><span class="tag">Active Directory</span><span class="tag">VMware</span><span class="tag">Hyper-V</span></div></div></div>
+  <div class="tl-item reveal"><div class="card tl-card"><div class="tl-top"><div class="tl-role">IT Operations Engineer</div><div class="tl-date">Mar 2020 – Feb 2022</div></div><div class="tl-org">Cirion Technologies · Bogotá</div><p class="tl-desc">Support and administration of Linux and Windows Server systems (Level 1-2). DNS zone management and hardware support for HP ProLiant, Lenovo ThinkSystem, and Dell PowerEdge servers.</p></div></div>
+  <div class="tl-item reveal"><div class="card tl-card"><div class="tl-top"><div class="tl-role">Datacenter Operator Engineer</div><div class="tl-date">Oct 2018 – Feb 2020</div></div><div class="tl-org">ACT Telemática (for Cirion Technologies) · Bogotá</div><p class="tl-desc">Operations for Veritas NetBackup and HP Data Protector. Backup and restore for Windows, Linux, VMware, Hyper-V, and databases: Oracle, MS Exchange, MS SQL, MySQL, SAP.</p><div class="tags"><span class="tag">NetBackup</span><span class="tag">Data Protector</span></div></div></div>
+</div></div>
+<div id="panel-acad" class="tab-panel" role="tabpanel"><div class="timeline">
+  <div class="tl-item current"><div class="card tl-card"><div class="tl-top"><div class="tl-role">Professor</div><div class="tl-date">2023 – Present</div></div><div class="tl-org">Faculty of Engineering, Universidad El Bosque · Bogotá</div><ul class="course-list"><li><span class="y">Since 2023</span><span>Diploma Course: Information Security and Ethical Hacking (every year)</span></li><li><span class="y">2026</span><span>Information Security · Operating Systems</span></li><li><span class="y">2025</span><span>Information Security</span></li><li><span class="y">2023</span><span>Digital Systems and Computer Architecture</span></li></ul></div></div>
+  <div class="tl-item"><div class="card tl-card"><div class="tl-top"><div class="tl-role">Teaching &amp; Research Fellow</div><div class="tl-date">2023 – 2024</div></div><div class="tl-org">WhiteLab Research Group, Pontificia Universidad Javeriana · Bogotá</div><p class="tl-desc">As part of a teaching and research scholarship: taught classes, organized academic activities, supported the coordination of the cybersecurity and digital forensics research group, and co-wrote a research article.</p></div></div>
+</div></div>
+</div></section>
+<section id="education" class="block alt"><div class="container">
+<div class="section-head reveal"><p class="section-kicker">07.</p><h2 class="section-title">Education</h2></div>
+<div class="edu-grid">
+  <div class="card edu-card reveal"><span class="edu-date">2023 – 2025</span><h3>Master's in Digital Security</h3><div class="edu-org">Pontificia Universidad Javeriana</div><p>Teaching and research scholarship, <a href="https://perfilesycapacidades.javeriana.edu.co/es/organisations/whitelab" target="_blank" rel="noopener">WhiteLab Research Group</a>.</p><div class="honors"><a class="honor" href="cumlaude.jpg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>Cum Laude</a><a class="honor" href="hmentionPUJ.jpg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>Thesis Honorable Mention</a></div></div>
+  <div class="card edu-card reveal"><span class="edu-date">2022 – 2023</span><h3>Specialization in Telematics Network Security</h3><div class="edu-org">Universidad El Bosque</div><div class="honors"><a class="honor" href="hmention-EB.jpg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>Thesis Meritorious Mention</a></div></div>
+  <div class="card edu-card reveal"><span class="edu-date">2010 – 2015</span><h3>Electronic Engineering</h3><div class="edu-org">Universidad Cooperativa de Colombia</div><p>Thesis: Development of an instrument for patterning thermal sensors using linear regression.</p></div>
+</div>
+</div></section>
+<section id="contact" class="block"><div class="container"><div class="contact-box reveal">
+  <p class="section-kicker">08.</p><h2 class="section-title">Let's talk</h2>
+  <p>Open to research collaborations, academic projects and conversations about cybersecurity, digital forensics and cloud infrastructure.</p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="mailto:cesarr_beltran@javeriana.edu.co"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Send an email</a>
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/cesarbeltranh/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>Connect on LinkedIn</a>
+  </div>
+</div></div></section>
 </main>
-
-<footer>
-    <p>&copy; 2026 Cesar Ramiro Beltrán Hernández</p>
-</footer>
-
+<footer><div class="container foot">
+  <span>© 2026 Cesar Ramiro Beltrán Hernández</span>
+</div></footer>
+<script src="script.js" defer></script>
 </body>
 </html>
