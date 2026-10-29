@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaultShop: a web hacking lab with up-to-date vulnerabilities | Cesar Beltrán</title>
+    <meta name="description" content="FaultShop is an intentionally vulnerable online store with 18 flaws based on the OWASP Top 10:2025 and the API Security Top 10:2023, including JWT, SSRF and mass assignment. It runs in Docker with a single command.">
+    <meta name="author" content="Cesar R. Beltrán-Hernández">
+    <link rel="canonical" href="https://cesarbeltran.github.io/faultshop-lab.html">
+    <link rel="alternate" hreflang="en" href="https://cesarbeltran.github.io/faultshop-lab.html">
+    <link rel="alternate" hreflang="es" href="https://cesarbeltran.github.io/laboratorio-faultshop.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="FaultShop: a web hacking lab with up-to-date vulnerabilities">
+    <meta property="og:description" content="FaultShop is an intentionally vulnerable online store with 18 flaws based on the OWASP Top 10:2025 and the API Security Top 10:2023, including JWT, SSRF and mass assignment. It runs in Docker with a single command.">
+    <meta property="og:url" content="https://cesarbeltran.github.io/faultshop-lab.html">
+    <meta property="og:image" content="https://cesarbeltran.github.io/faultshop.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-10-29">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "FaultShop: a web hacking lab with up-to-date vulnerabilities",
+  "description": "FaultShop is an intentionally vulnerable online store with 18 flaws based on the OWASP Top 10:2025 and the API Security Top 10:2023, including JWT, SSRF and mass assignment. It runs in Docker with a single command.",
+  "inLanguage": "en",
+  "datePublished": "2026-10-29",
+  "dateModified": "2026-10-29",
+  "image": "https://cesarbeltran.github.io/faultshop.jpg",
+  "url": "https://cesarbeltran.github.io/faultshop-lab.html",
+  "mainEntityOfPage": "https://cesarbeltran.github.io/faultshop-lab.html",
+  "author": {
+    "@type": "Person",
+    "@id": "https://cesarbeltran.github.io/#person",
+    "name": "Cesar Ramiro Beltrán Hernández",
+    "alternateName": "Cesar R. Beltrán-Hernández",
+    "url": "https://cesarbeltran.github.io/index.html"
+  },
+  "about": {
+    "@type": "SoftwareSourceCode",
+    "name": "FaultShop",
+    "codeRepository": "https://github.com/CesarBeltran/faultshop",
+    "sameAs": [
+      "https://vwad.owasp.org/app/faultshop/"
+    ]
+  }
+}
+    </script>
+    <script>(function(){try{var t=localStorage.getItem("theme");}catch(e){}if(!t)t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t);})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<header class="nav"><div class="nav-inner">
+  <a href="index.html" class="logo">Cesar <span class="logo-mid">Ramiro </span>Beltrán<span class="logo-dot">.</span></a>
+  <ul class="nav-links" id="nav-links"><li><a href="index.html#about">About</a></li><li><a href="index.html#publications">Publications</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+  <div class="nav-actions">
+    <a class="lang-btn" href="laboratorio-faultshop.html" hreflang="es" title="Leer en español">ES</a>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</div></header>
+<main id="top">
+<article class="post">
+  <a class="post-back" href="index.html#projects">&larr; Back to profile</a>
+  <h1>FaultShop: a web hacking lab with up-to-date vulnerabilities</h1>
+  <p class="vwad post-vwad"><span class="vwad-tag">OWASP</span><span>Listed in the <a href="https://vwad.owasp.org/app/faultshop/" target="_blank" rel="noopener">Vulnerable Web Applications Directory</a></span></p>
+  <p class="post-meta">Cesar R. Beltrán-Hernández · October 29, 2026</p>
+<p>FaultShop is a lab for practicing web security with vulnerabilities that show up in real applications today: poorly validated JWTs, unauthenticated APIs, SSRF and mass assignment, along with classics like SQL injection and XSS. All inside an online store that looks and works like a real one.</p>
+
+<figure>
+  <img src="faultshop.jpg" alt="FaultShop home page with the product catalog" width="720" height="435" loading="lazy">
+  <figcaption>The FaultShop home page.</figcaption>
+</figure>
+
+<p>The store sells laptops, peripherals and accessories. Users have a balance, can buy products, leave reviews, download their invoices and update their profile. That's exactly where the flaws are: in the checkout flow, in the API the site uses, in password recovery.</p>
+
+<p>FaultShop is listed in the <a href="https://vwad.owasp.org/app/faultshop/" target="_blank" rel="noopener">OWASP Vulnerable Web Applications Directory</a>, the registry of vulnerable applications for training that also includes labs like Juice Shop and DVWA.</p>
+
+<figure class="figure-narrow">
+  <a href="https://vwad.owasp.org/app/faultshop/" target="_blank" rel="noopener"><img src="vwad-faultshop.jpg" alt="FaultShop entry in the OWASP Vulnerable Web Applications Directory" width="660" height="837" loading="lazy"></a>
+  <figcaption>The FaultShop entry in the OWASP directory.</figcaption>
+</figure>
+
+<h2>What's vulnerable</h2>
+
+<p>The classics are there, because they still show up in real applications: SQL injection, reflected and stored XSS, command injection, path traversal, CSRF and unrestricted file upload.</p>
+
+<p>Besides the ones mentioned above (JWT, unauthenticated APIs, SSRF and mass assignment), there is broken function level authorization and a password reset you can abuse. There are also configuration mistakes, like debug mode left on, missing security headers and sensitive data stored in plaintext.</p>
+
+<p>Every vulnerability is documented and mapped to its OWASP category. The <a href="https://github.com/CesarBeltran/faultshop#included-vulnerabilities" target="_blank" rel="noopener">full list</a> is in the repository.</p>
+
+<p>For password recovery, FaultShop ships with an internal mail server (MailHog). Emails land in an inbox you can open in the browser, so the attack can be tested end to end, the way a user would see it.</p>
+
+<h2>Built for the classroom</h2>
+
+<p>The idea came from my ethical hacking classes. Labs like DVWA are still useful to get started, but they don't cover several of these flaws, and I needed a scenario closer to what you find in an audit today.</p>
+
+<p>That's why FaultShop runs entirely in Docker with a single command and has a reset button that puts everything back to its initial state in seconds. With 18 vulnerabilities, it can be worked through in a few sessions of a course.</p>
+
+<h2>Try it</h2>
+
+<p>All you need is Docker:</p>
+
+<pre><code>curl -sO https://raw.githubusercontent.com/CesarBeltran/faultshop/main/docker-compose.yml
+docker compose up -d</code></pre>
+
+<p>The store runs at <code>http://localhost:5000</code> and the mail inbox at <code>http://localhost:8025</code>. You can sign in as <code>carlos</code> / <code>password1</code>. It's vulnerable on purpose, so don't expose it to the internet.</p>
+
+<p>If you use it in a course or think it's missing a vulnerability, I'd love to hear about it.</p>
+
+<ul class="post-links">
+<li><strong>OWASP VWAD:</strong> <a href="https://vwad.owasp.org/app/faultshop/" target="_blank" rel="noopener">vwad.owasp.org/app/faultshop</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/CesarBeltran/faultshop" target="_blank" rel="noopener">github.com/CesarBeltran/faultshop</a></li>
+<li><strong>Docker Hub:</strong> <a href="https://hub.docker.com/r/cbeltranh/faultshop" target="_blank" rel="noopener">hub.docker.com/r/cbeltranh/faultshop</a></li>
+</ul>
+
+</article>
+</main>
+<footer><div class="container foot">
+  <span>© 2026 Cesar Ramiro Beltrán Hernández</span>
+</div></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
